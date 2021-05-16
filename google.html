@@ -1,5 +1,44 @@
 <!DOCTYPE html>
 <style>
+    .head{
+        display: inline;
+        width: 100%;
+    }
+    .left{
+        display: flex;
+        float:left;
+        padding-left: 15px;
+        position: fixed;
+        top: 10px;
+        margin-top: 1.5em;
+    }
+    .right{
+        display: flex;
+        float:right;
+        padding-right: 1.5em;
+        position: fixed;
+        top: 10px;
+        right: 3%;
+        margin-top: 1.5em;
+    }
+
+    ul{
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        float: left;
+        font-size: 13px;
+        font: sans-serif;
+    }
+    li{
+        margin-right: 15px;
+    }
+    a{
+        text-decoration: none;
+    }
+    a:hover{
+        text-decoration: underline;
+    }
     .body{
         align-items: center;
     }
@@ -16,18 +55,68 @@
         margin-left:auto;
         margin-right: auto;
         height: 3em;
-        width: 35vmax;
+        width: 30vmax;
         border-radius: 40em;
         border-top-color: lightgrey;
         border-left-color: lightgrey;
-        border-block-width: .001%;
-        padding: .15em;
+        border-block-width: 0%;
+        padding: .25em;
+    }
+    .applogo{
+        color: lightgrey;
+        position:fixed;
+        top: 20px;
+        right: 90px;
+    }
+    .Gmail{
+        color: black;
+        position:fixed;
+        top: 30px;
+        right: 195px;
+    }
+    .Images{
+        color: black;
+        position:fixed;
+        top: 30px;
+        right: 135px;
+    }
+    .about{
+        color: black;
+    }
+
+    .Store{
+        color: black;
+    }
+
+    .signin{
+        width: 69.4px;
+        height: 30px;
+        background-color: #4885ed;
+        font-size: 13px;
+        font: arial;
+        color: white;
+        border: none;
+        position:fixed;
+        top: 20px;
+        right: 10px;
     }
 
 
 </style>
 
 <html>
+    <head>
+        <ul class = "left">
+            <li><a href = "" class = "about">About</a></li>
+            <li><a href = "" class = "Store">Store</a></li>
+        </ul>
+        <ul class = "right">
+            <li><a href = "" class = "Gmail">Gmail </a></li>
+            <li> <a href = "" class = "Images">Images</a></li>
+            <li><a href = ""><img alt = "Google App" src = "app.png" class = "applogo" width = "30" height = "30"></a></li>
+            <li><button class = "signin"> Sign In</button></li>
+        </ul>
+    </head>
     <body>
 
         <img src = "googlelogo_color_272x92dp.png" alt = "Google Logo" class = "logo">
