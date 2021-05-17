@@ -32,6 +32,7 @@
     }
     li{
         margin-right: 15px;
+        float: left;
     }
     a{
         text-decoration: none;
@@ -61,7 +62,17 @@
         border-left-color: lightgrey;
         border-block-width: 0%;
         padding: .25em;
+        background-image: url(searchicon.jpg);
+        background-size: 25px, 25px;
+        background-repeat: no-repeat;
+        background-position-y: 15px;
+        background-position-x: 5px;
+        text-indent: 30px;
     }
+    input[type="text"]{
+        font-size: 15px;
+    }
+
     .applogo{
         color: lightgrey;
         position:fixed;
@@ -99,6 +110,80 @@
         position:fixed;
         top: 20px;
         right: 10px;
+        cursor: pointer;
+        }
+    footer{
+        position: fixed;
+        display: inline;
+        bottom: 0;
+        height: 8%;
+        width: 100%;
+        background-color: #f2f2f2;
+
+    }
+    .bottomleft{
+        display: flex;
+        float:left;
+        padding-left: 15px;
+        position: fixed;
+        bottom: 25px;
+        font-size: 15px;
+    }
+    .bottomright{
+        display: flex;
+        float:right;
+        position: fixed;
+        bottom: 25px;
+        right: 1%;
+        margin-top: 1.5em;
+        background-color: #f2f2f2;
+        font-size: 15px;
+    }
+    .ad{
+        color: black;
+    }
+    .bus{
+        color: black;
+    }
+    .SearchWork{
+        color: black;
+    }
+    .priv{
+        color: black;
+    }
+    .terms{
+        color:black;
+    }
+    .Setting{
+        color: black;
+    }
+    .buttons{
+        display: inline-block;
+        width: 5px;
+        height: auto;
+    }
+
+    .goosearch{
+        position: fixed;
+        right: 50%;
+        bottom: 45%;
+        border: none;
+        height: 40px;
+        width: 150px;
+        padding-right: 15px;
+    }
+    .goosearch:hover{
+        box-shadow: 1px 1px 1px 1px black;
+        cursor: pointer;
+    }
+    .lucky{
+        position: fixed;
+        right: 40%;
+        bottom: 45%;
+        border: none;
+        height: 40px;
+        width: 150px;
+        padding-left: 15px;
     }
 
 
@@ -114,13 +199,29 @@
             <li><a href = "" class = "Gmail">Gmail </a></li>
             <li> <a href = "" class = "Images">Images</a></li>
             <li><a href = ""><img alt = "Google App" src = "app.png" class = "applogo" width = "30" height = "30"></a></li>
-            <li><button class = "signin"> Sign In</button></li>
+            <li><button class = "signin"> <a>Sign In</a></button></li>
         </ul>
     </head>
     <body>
-
         <img src = "googlelogo_color_272x92dp.png" alt = "Google Logo" class = "logo">
+        <i class = "search-btn"></i>
         <input type = "text" placeholder = "" class = "search">
-
+        <div class = "buttons">
+            <button class = "goosearch">Google Search</button>
+            &nbsp;
+            <button class = "lucky">I'm Feeling Lucky</button>
+        </div>
     </body>
+    <footer>
+        <ul class = "bottomleft">
+            <li><a href = "" class = "ad">Advertising</a></li>
+            <li><a href = "" class = "bus">Business</a></li>
+            <li><a href = "" class = "SearchWork">How Search works</a></li>
+        </ul>
+        <ul class = "bottomright">
+            <li><a href = "" class = "priv">Privacy</a></li>
+            <li><a href = "" class = "terms">Terms</a></li>
+            <li><a href = "" class = "Setting">Settings</a></li>
+        </ul>
+    </footer>
 </html>
